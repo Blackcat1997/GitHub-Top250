@@ -1,0 +1,132 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font: 18px;
+    position: relative;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-size: 23px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #24282D;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.container {
+    border: 0px solid red;
+    width: 78%;
+    margin: 30px auto;
+}
+.container .repo {
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 13px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #C5C5C5;
+    transition: 0.3s;
+}
+.repo-name {
+    font-size: 23px;
+    font-weight: bold;
+    color:#4090F7;
+    width: 80%;
+    height: 40px;
+    margin: 5px auto;
+    line-height: 60px;
+    text-align: center;
+}
+.repo-info {
+    width: 90%;
+    height: 180px;
+    border-bottom: 2px solid #D1D5D9;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+}
+.stars {
+    border: 0px solid olivedrab;
+    background-color: #ffffff;
+    width: 40%;
+    margin: 0px auto;
+    position: relative;
+}
+.star-line {
+    width: 90%;
+    height: 0;
+    border: 1px solid #D1D5D9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px auto;
+}
+.star-name {
+    position: relative;
+    left: -3px;
+}
+.star-name, .star-fork {
+    display: inline;
+    border: 0px solid greenyellow;
+    height: 30px;
+    line-height: 30px;
+}
+
+.repo-description {
+    border: 0px solid red;
+    line-height: 120px;
+    height: 120px;
+    padding: 0px 3px;
+}
+.repo-description section {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+.repo-info .bottom-line-left {
+    width: 25%;
+    border: 1px solid #ffffff;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+}
+.repo-info .bottom-line-right {
+    width: 25%;
+    border: 1px solid #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+}
+.time {
+    width: 90%;
+    border: 0px solid orange;
+    margin: 40px auto;
+    text-align: center;
+    color: rgb(139, 142, 143);
+    position: relative;
+    top: 10px;
+}
+.time section.time-title {
+    border: 0px solid violet;
+    display: inline-block
+}
+.time section.time-value {
+    border: 0px solid green;
+    display: inline-block;
+}
+.repo:hover {
+    box-shadow: 3px 3px 10px 3px #C5C5C5;
+    transform: scale(1.03);
+}
+a.repo-link {
+    text-decoration: none;
+    color: black;
+}
