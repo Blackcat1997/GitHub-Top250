@@ -17,11 +17,11 @@ header {
     text-align: center;
     margin-top: 0px;
 }
-
 .container {
-    border: 0px solid red;
+    border: 3px solid red;
     width: 78%;
-    margin: 30px auto;
+    margin: 1% auto;
+    text-align: center;
 }
 .container .repo {
     height: 300px;
@@ -34,12 +34,12 @@ header {
     transition: 0.3s;
 }
 .repo-name {
-    font-size: 23px;
+    font-size: 2vw;
     font-weight: bold;
     color:#4090F7;
     width: 80%;
     height: 40px;
-    margin: 5px auto;
+    margin: 5% auto;
     line-height: 60px;
     text-align: center;
 }
@@ -67,7 +67,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    margin: 15px auto;
+    margin: 4% auto;
 }
 .star-name {
     position: relative;
@@ -129,4 +129,28 @@ header {
 a.repo-link {
     text-decoration: none;
     color: black;
+}
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 481px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        overflow: hidden;
+    }
+    header {
+        height: 200px;
+        line-height: 200px;
+        font-size: 80px;
+    }
+    .container {
+        width: 100%;
+        margin-top: 3%;
+    }
+    .container .repo {
+        height: 800px;
+        width: 800px;
+        font-size: 43px;
+    }
+    .repo-name {
+        font-size: 6vw
+    }
 }
